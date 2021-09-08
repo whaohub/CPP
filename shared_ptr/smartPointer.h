@@ -1,3 +1,5 @@
+##Warning   内存泄露
+
 #ifndef _SMARTPOINTER_H_
 #define _SMARTPOINTER_H_
 #include <memory>
@@ -43,7 +45,7 @@ SmartPointer<T>::SmartPointer(T *ptr) : m_ptr(ptr)
     }
     else
     {
-        m_count = new size_t(0);
+        m_count = new size_t(0);    //内存泄露
     }
 }
 
