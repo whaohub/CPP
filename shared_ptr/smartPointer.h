@@ -1,4 +1,4 @@
-##Warning   内存泄露
+// Warning   内存泄露
 
 #ifndef _SMARTPOINTER_H_
 #define _SMARTPOINTER_H_
