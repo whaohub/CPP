@@ -36,16 +36,12 @@ private:
 };
 
 template <typename T>
-SmartPointer<T>::SmartPointer(T *ptr) : m_ptr(ptr)
+SmartPointer<T>::SmartPointer(T *ptr = 0) : m_ptr(ptr)
 {
     if (m_ptr != NULL)
     {
         std::cout<<"ctor"<<std::endl;
         m_count = new size_t(1);
-    }
-    else
-    {
-        m_count = new size_t(0);    //内存泄露
     }
 }
 
